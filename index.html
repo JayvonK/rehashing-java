@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/wicked.css">
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+
+<body>
+    <h1 id="header" class="text-center">Hello, world!</h1>
+    <div class="row ">
+        <div class="d-flex justify-content-center">
+            <button id="changeHeaderBtn" class="btn btn-primary">Change The Header</button>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="center">
+                        <button id="spinBtn" class="btn btn-danger">spin</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center">
+                      <button id="rollBtn" class="btn btn-danger">roll</button>  
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="center">
+                       <button id="waddleBtn" class="btn btn-danger">waddle</button> 
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="center">
+                        <button id="pulseBtn" class="btn btn-danger">pulse</button>
+                    </div>
+                    
+                </div>
+                <div class="center">
+                    <button id="numberBtn" class="btn btn-danger">click me</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="center">
+                    <img id="changeMe" src="./assets/NOVA CARD.png" alt="">
+                </div>
+                <div class="center">
+                    <h1 id="randomNumber">Random Advice</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+
+        <h1 style="text-align: center;">Making Card</h1>
+
+        <div class="row">
+            <div class="col center">
+                <button id="cardBtn" class="btn btn-primary">make card</button>
+            </div>
+            <div class="col center">
+                <p style="text-align: center;" id="injectHere">Card will appear on me</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+
+</html>
