@@ -50,16 +50,11 @@ console.log(studentList[listIndex].firstName[listIndex2]);
 
 
 numberBtn.addEventListener('click', function () {
-    // randomNumber.innerText = Math.floor(Math.random() * 1000);
-    ApiCall();
-})
-
-function ApiCall() {
     fetch('https://api.adviceslip.com/advice').then(
     number => number.json().then(
         data => randomNumber.innerText = data.slip.advice
     ))
-}
+})
 
 cardBtn.addEventListener('click', function(e){
     MakeCard("Title")

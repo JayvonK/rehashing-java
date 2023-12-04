@@ -2,6 +2,7 @@ let injectHere = document.getElementById("injectHere");
 let cardBtn = document.getElementById("cardBtn");
 
 function MakeCard(title) {
+    
     injectHere.innerHTML = "";
     let h5 = document.createElement("h5");
     h5.className = "card-body";
